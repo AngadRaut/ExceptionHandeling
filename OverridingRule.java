@@ -17,7 +17,7 @@ class Parent{
 }
 public class OverridingRule extends Parent{
     @Override
-    public void add() throws NullPointerException,RuntimeException {
+    public void add() throws IndexOutOfBoundsException {
         super.add();
         System.out.println("overridden add method");
     }
